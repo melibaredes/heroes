@@ -25,15 +25,22 @@ body {
     font-size: 100%;
     vertical-align: baseline;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
 section{
     text-align: center;
     margin: 100px 0px;
     display: flex;
+    direction: row;
     justify-content: space-around;
     align-items: center;
 }
 article {
-    width: 300px;
+    width: 320px;
     height: 500px;
     display: inline-block;
     padding: 10px;
@@ -42,6 +49,10 @@ article {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
 }
 i {
     color: #CC2424;
@@ -49,7 +60,7 @@ i {
     position: absolute;
     top: 20px; left: 25px;
 }
-img {
+.icon {
     border-radius: 50%;
     position: absolute;
     top: 120px; right: 90px;
@@ -73,6 +84,36 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
 }
+.mujerMaravilla {
+    background-color: #F3F3F3;
+    background-image: url('../img/Copia\ de\ 849bfede3a5193c34ab8a00379e64fa2\ 1.png');
+    border-radius: 10% 10% 0% 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.superman {
+    background-color: #F3F3F3;
+    background-image: url('../img/Copia\ de\ 849bfede3a5193c34ab8a00379e64fa2\ 1\ \(1\).png');
+    border-radius: 10% 10% 0% 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mujerMaravilla h2 {
+    padding: 15px 0px 0px 25px;
+    text-align: center;
+}
+.mujerMaravilla p {
+    position: relative;
+    top: 270px;
+}
+.superman h2 {
+    position: absolute;
+    top: 230px;
+}
+.superman p {
+    position: relative;
+    top: 270px
+}
 .card {
     position: absolute;
     bottom: 140px;
@@ -90,13 +131,104 @@ footer {
     margin: 0px;
     padding: 20px;
     border: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.img-achicar {
+    max-width: 40%;
+    max-height: auto;
+}
+footer p {
+    position: relative;
+    left: 300px;
+}
+#logo {
+    max-width: 10%;
+    max-height: auto;
+    padding: 0px 30px 0px 0px;
+    margin: 0px;
+    border: 0px;
+}
+#boton-mas {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 900px; top: 500px;
+    text-align: center;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    z-index: 1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 425px) {
+    html,
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+    }
     section {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-content: center;
+    }
+    #descuentos {
+        background-color: #D1891C;
+        margin: 0px;
+        padding: 0.2px;
+        border: 0px;
+    }
+    #heroes {
+        width: 100vw;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer p{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    align-self: flex-start;
+    }
+    #logo {
+        max-width: 20vw;
+        height: auto;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #descuentos {
+        background-color: #D1891C;
+        margin: 0px;
+        padding: 0.2px;
+        border: 0px;
+    }
+    footer p {
+        position: relative;
+        left: 200px;
+    }
+    #boton-mas {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        left: 90px; top: 500px;
+        text-align: center;
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        z-index: 1;
     }
 }
