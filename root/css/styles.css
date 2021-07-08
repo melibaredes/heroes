@@ -13,9 +13,17 @@ p {
     background-color: #00669F;
     margin: 0px;
     padding: 5px 2px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+}
+#nav-principal {
+    background-color:#001D2D;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#nav-principal a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -231,4 +239,146 @@ footer p {
         border: 0px;
         z-index: 1;
     }
+}
+/* sección registro */
+#form-registro-header {
+    display: flex;
+    justify-content: start;
+    background-color: #00669F;
+    color: #FFFFFF;
+    font-weight: 400px;
+}
+#form-registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+#form-registro h1 {
+    font-size: 72px;
+    text-align: left;
+    color: #333333;
+}
+#form-registro input {
+    width: 620px;
+    height: 60px;
+    margin: 0px 0px 20px 0px;
+    border: 1.53407px solid #000000;
+}
+#form-registro select {
+    width: 630px;
+    height: 60px;
+    margin: 0px 0px 10px 0px;
+    border: 1.53407px solid #000000;
+}
+#form-registro-botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#form-registro-reset {
+    background-color: #888888;
+    color: #FFFFFF;
+    font-size: 24px;
+    border-radius: 23px;
+    width: 300px;
+    height: 53.79px;
+}
+#form-registro-enviar {
+    background-color: #1CD1B0;
+    color: #000000;
+    font-size: 24px;
+    border-radius: 23px;
+    width: 300px;
+    height: 53.79px;
+}
+#form-registro-botones p {
+    padding: 20px;
+}
+#form-registro-botones a {
+    color: #1D67A0;
+    text-decoration: none;
+}
+#registro-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#registro-footer p {
+    position: absolute;
+    right: 0px; left: 540px;
+}
+/* sección login*/
+#form-login-header {
+    display: flex;
+    justify-content: start;
+    background-color: #00669F;
+    color: #FFFFFF;
+    font-weight: 400px;
+}
+#form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+#form-login h1 {
+    font-size: 72px;
+    text-align: left;
+    color: #333333;
+}
+#form-login input {
+    width: 620px;
+    height: 60px;
+    margin: 10px;
+    border: 1.53407px solid #000000;
+}
+#login-botones {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#login-botones input {
+    width: 620px;
+    height: 60px;
+    background-color: #1CD1B0;
+    color: #000000;
+    border-radius: 23px;
+    font-size: 24px;
+    margin: 20px;
+}
+#login-botones p {
+    color: #1D67A0;
+}
+#login-botones a {
+    color: #333333;
+    text-decoration: none;
+}
+#login-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+#login-footer p {
+    position: absolute;
+    right: 0px; left: 540px;
+}
+/* contacto */
+textarea {
+    width: 620px;
+    height: 251px;
+    margin-bottom: 30px;
+}
+#contacto-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
