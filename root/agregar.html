@@ -26,7 +26,7 @@
         </div>
     </header>
     <main>
-    <section id="form-agregar">
+    <form id="form-agregar">
         <h1>¡Añadí tu súper!</h1>
         <p>Agregá tu personaje favorito completando las opciones.</p>
         <section id="flex-container">
@@ -40,6 +40,7 @@
         <div id="segundacolumna">
             <div id="species"><label for="especie">Especie</label>
                 <select id="especie" required>
+                    <option value="selec" disabled selected hidden>Seleccionar opción...</option>
                     <option value="Alienigena">Alienigena</option>
                     <option value="Animal">Animal</option>
                     <option value="Unknown">Unknown</option>
@@ -70,7 +71,7 @@
         </div>
         </section>
     <input type="submit" name="enviar" value="Añadir" id="boton-agregar">
-    </section>
+    </form>
     </main>
     <footer id="agregar-footer">
         <p>Todos los derechos reservados a FRONT END 1</p>

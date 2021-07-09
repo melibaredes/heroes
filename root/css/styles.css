@@ -406,6 +406,7 @@ main {
     border-radius: 49px;
     padding: 0px;
     color: #FFFFFF;
+    margin: 20px;
 }
 #form-agregar h1, p {
     color: #FFFFFF;
@@ -535,4 +536,7 @@ label {
 #agregar-footer p {
     position: relative;
     left: 520px;
+}
+input[type=file]::-webkit-file-upload-button {
+    border-radius: 23px;
 }
