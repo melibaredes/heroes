@@ -171,6 +171,10 @@ footer p {
     border: 0px;
     z-index: 1;
 }
+#boton-mas a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 425px) {
     html,
@@ -381,4 +385,154 @@ textarea {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+/*sección agregar*/
+#body-agregar {
+    font-family: 'Inter', sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-agregar {
+    width: 754px;
+    height: 732px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00669F;
+    border-radius: 49px;
+    padding: 0px;
+    color: #FFFFFF;
+}
+#form-agregar h1, p {
+    color: #FFFFFF;
+    text-align: center;
+}
+#nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#nombre ::before {
+    content: '*';
+}
+#name {
+    width: 213px;
+    height: 33px;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+    position: relative;
+    left: 10px;
+}
+#species {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#species ::before {
+    content: '*';
+}
+#especie {
+    width: 213px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+}
+#descripcion {
+    width: 213px;
+    height: 207px;
+    background: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    left: 10px;
+    margin-top: 5px;
+}
+#fecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+#date {
+    width: 213px;
+    height: 33px;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+    font-family: 'Inter', sans-serif;
+}
+#image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+#checkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+#options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+fieldset {
+    border: none;
+}
+#boton-agregar {
+    background-color: #1CD1B0;
+    color: #000000;
+    width: 366px;
+    height: 67px;
+    border-radius: 19px;
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    padding: 0px;
+    margin: 20px;
+}
+label {
+    margin: 10px;
+}
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+#primercolumna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+    position: relative;
+    top: 10px;
+}
+#segundacolumna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+}
+#agregar-footer p {
+    position: relative;
+    left: 520px;
 }
